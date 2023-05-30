@@ -46,8 +46,8 @@ function displayValue4() {
 		let AppendCode = "";
 		let AppendCode2 = "";
 
-		AppendCode = "<a href=\"/pet/pat/"  + PetIDArray[i] + "\"><img src=\"" + PetCodeArray[i] + "\" />";
-		AppendCode2 = "<a href=\"/pet/chat/"  + PetIDArray[i] + "\"><img src=\"" + PetCodeArray[i] + "\" />";
+		AppendCode = "<a href=\"/pet/pat/"  + PetIDArray[i] + "\"><img src=\"" + PetCodeArray[i] + "\" /></a>";
+		AppendCode2 = "<a href=\"/pet/chat/"  + PetIDArray[i] + "\"><img src=\"" + PetCodeArray[i] + "\" /></a>";
 		
 		PetFinalCodeArray.push(AppendCode);
 		PetFinalCodeArray2.push(AppendCode2);
