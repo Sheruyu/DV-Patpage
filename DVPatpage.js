@@ -55,7 +55,7 @@ function displayValue() {
 		}
 		PetFinalCodeArray.push(AppendCode);
 	}
-	var str = PetFinalCodeArray.join('')
+	var str = PetFinalCodeArray.join('');
 	
     document.getElementById("textareaID2").innerHTML = "<div class=\"bg\"><div class=\"content\"><center><p>Pat Page</p>" + str + "<br><br><div class=\"footer-body\"><a href=\"/forum/topic/38037-quick-pat-page-auto-generator\">Click here to generate your own patpage</a></div></div></div>";
 }
