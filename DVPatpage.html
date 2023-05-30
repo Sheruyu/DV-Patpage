@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Patpage generator</title>
+</head>
+<body><h3>Paste source code here:</h3>
+<textarea id="textareaID" rows="7" cols="100"></textarea>
+<br><br>
+<label for="linkback">Link back to pet</label>
+	<select id="linkback">
+		<option value="Yes">Yes</option>
+		<option value="No">No</option>
+	 </select>
+	
+<br><br><input type="button" value="Generate code" onclick="displayValue()"><br>
+<h3>Copy HTML into petpage:</h3>
+<textarea id="textareaID2" rows="7" cols="100"></textarea>
+<h3>Copy CSS into petpage:</h3>
+<textarea id="textareaID3" rows="7" cols="100">.bg {background: #eab490 url("/img/bg.jpg");
+overflow: hidden; min-height: 100%;}
+.content {
+overflow: hidden;
+margin-top: 20px;
+margin-left: 15%;
+margin-right: 15%;
+position: relative;
+padding-top: 10px;
+padding-left: 3%;
+padding-right: 3%;
+padding-bottom: 20px;
+background-color: #f8d0a1;
+border: 4px solid #fff;
+border-top-left-radius: 120px;
+border-top-right-radius: 120px;
+font-family: "Roboto Condensed", "Helvetica", "Arial", sans-serif;
+color: #fff;
+font-size: 15px;}
+.x{
+position: absolute;
+display: inline-block;
+padding-left: 2px;
+padding-right: 2px;}
+
+.footer-body {
+background: #e8b492;
+color: #fff;
+border: 4px solid white;
+border-top: 0;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+margin: 0 -15% -23px;
+padding: 10px 50px;
+text-align:center;
+}
+.footer-body a { color:#ffffff; text-decoration:none;!important}
+
+a:hover img { opacity:.6;}</textarea>
+<script src="DVPatpage.js"></script>
+</body>
+</html>
