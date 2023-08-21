@@ -261,6 +261,10 @@ function displayValue2() {
 	var str = PetFinalCodeArray.join('');
 	
     document.getElementById("textareaID2").innerHTML = "<div class=\"bg\"><div class=\"container-center\"><div class=\"container-main\"><div align=\"center\"><span style=\"text-transform:uppercase; font-family:\"Roboto Condensed\", \"Helvetica\", \"Arial\", sans-serif\"><a href=\"/profile/" + UserID + "\"><b><< Return to " + Username + " (#" + UserID + ")'s Profile >></b></a></span></div><div class=\"flex-container wrap\">" + str + "<br><br></div><div class=\"footer-body\"><div class=\"row\"><div><a href=\"/profile/3988\">This pet page's coding has been put together by Misha#3988</a><br>-<br><a href=\"/forum/topic/38037-quick-pat-page-auto-generator\">Click here to generate your own patpage</a></div></div></div></div></div>";
+	
+	document.getElementById("HTMLButton").innerHTML = "Copy HTML to clipboard";
+	document.getElementById("CSSButton").innerHTML = "Copy CSS to clipboard";
+	
 }
 
 function CheckBoxDisable()
@@ -332,4 +336,34 @@ function ChangeImage()
 	}
 	
 
+}
+
+function copyHTML()
+{
+	// Get the text field
+	var copyText = document.getElementById("textareaID2");
+
+	// Select the text field
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); // For mobile devices
+
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(copyText.value);
+	
+	document.getElementById("HTMLButton").innerHTML = "Copied!";
+}
+
+function copyCSS()
+{
+	// Get the text field
+	var copyText = document.getElementById("textareaID3");
+
+	// Select the text field
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); // For mobile devices
+
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(copyText.value);
+	
+	document.getElementById("CSSButton").innerHTML = "Copied!";
 }

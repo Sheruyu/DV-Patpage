@@ -56,4 +56,21 @@ function displayValue4() {
 	var str2 = PetFinalCodeArray2.join('');
 	
     document.getElementById("textareaID2").innerHTML = "<p>Pats</p>" + str + "<p>Chat</p>" + str2;
+	
+	document.getElementById("HTMLButton").innerHTML = "Copy HTML to clipboard";
+}
+
+function copyHTML()
+{
+	// Get the text field
+	var copyText = document.getElementById("textareaID2");
+
+	// Select the text field
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); // For mobile devices
+
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(copyText.value);
+	
+	document.getElementById("HTMLButton").innerHTML = "Copied!";
 }

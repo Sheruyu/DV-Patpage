@@ -58,4 +58,37 @@ function displayValue() {
 	var str = PetFinalCodeArray.join('');
 	
     document.getElementById("textareaID2").innerHTML = "<div class=\"bg\"><div class=\"content\"><center><p>Pat Page</p>" + str + "<br><br><div class=\"footer-body\"><a href=\"/forum/topic/38037-quick-pat-page-auto-generator\">Click here to generate your own patpage</a></div></div></div>";
+	
+	document.getElementById("HTMLButton").innerHTML = "Copy HTML to clipboard";
+	document.getElementById("CSSButton").innerHTML = "Copy CSS to clipboard";
+}
+
+function copyHTML()
+{
+	// Get the text field
+	var copyText = document.getElementById("textareaID2");
+
+	// Select the text field
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); // For mobile devices
+
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(copyText.value);
+	
+	document.getElementById("HTMLButton").innerHTML = "Copied!";
+}
+
+function copyCSS()
+{
+	// Get the text field
+	var copyText = document.getElementById("textareaID3");
+
+	// Select the text field
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); // For mobile devices
+
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(copyText.value);
+	
+	document.getElementById("CSSButton").innerHTML = "Copied!";
 }
