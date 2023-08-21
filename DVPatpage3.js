@@ -24,7 +24,7 @@ function displayValue2() {
 	var CheckPat = document.getElementById("check_pat").checked;
 
 	
-	//Change to i = 200 when not testing
+	
 	for (let i = 0; i < myArray.length; i++) {
 		if (myArray[i].search("text-center pet-li") > 0)
 		{
@@ -110,9 +110,6 @@ function displayValue2() {
 		PenNameTestArray[i][0].indexOf("data-name") + 11, 
 		PenNameTestArray[i][0].lastIndexOf("data-img")-2);
 		
-		/*var PenBG = PenNameTestArray[i][0].substring(
-		PenNameTestArray[i][0].indexOf("dappervolk.com") + 14, 
-		PenNameTestArray[i][0].length-2);*/
 		
 		if (PenNameTestArray[i][0].indexOf("verdant-fields") >= 0)
 		{
@@ -158,9 +155,7 @@ function displayValue2() {
 		PenNameArray.push([PenName,PenBG,PenNameTestArray[i][1]]);
 	}
 	
-	//alert(PetIDArray);
-	//alert(PetCodeArray);
-	//alert(PenNameArray);
+
 	
 	for (let i = 0; i < PenNameArray.length; i++)
 	{
@@ -319,7 +314,7 @@ function ChangeImage()
 	{
 		document.getElementById("PreviewImg").src = "https://i.imgur.com/6Cef94d.png";
 	}
-	else if(CheckCombo == "truetruetruetrue" || CheckCombo == "truetruetruefalse")
+	else if(CheckCombo == "truetruetruetrue")
 	{
 		document.getElementById("PreviewImg").src = "https://i.imgur.com/tMDnqhz.png";
 	}
