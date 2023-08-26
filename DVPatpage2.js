@@ -228,7 +228,7 @@ function displayValue2() {
 	
 	var str = PetFinalCodeArray.join('');
 	
-    document.getElementById("textareaID2").innerHTML = "<div class=\"bg\"><div class=\"content\"><center><p>Pat Page</p></center>" + str + "</tr></table></div><br><div class=\"footer-body\"><a href=\"/forum/topic/38037-quick-pat-page-auto-generator\">Click here to generate your own patpage</a></div></div>";
+    document.getElementById("textareaID2").innerHTML = "<div class=\"bg\"><div class=\"content\"><center><p>Pat Page</p></center>" + str + "<br><div class=\"footer-body\"><a href=\"/forum/topic/38037-quick-pat-page-auto-generator\">Click here to generate your own patpage</a></div></div>";
 	
 	document.getElementById("HTMLButton").innerHTML = "Copy HTML to clipboard";
 	document.getElementById("CSSButton").innerHTML = "Copy CSS to clipboard";
