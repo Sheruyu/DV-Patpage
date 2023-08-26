@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Patpage generator</title>
+</head>
+<body>
+<a href="DVPatpage.html">Link to the tool (version 2)</a> | <b>Link to the tool (version 2 with pens)</b> | <a href="DVPatpage3.html">Link to the tool (collab with Misha)</a> | <a href="DVPatpage4.html">Link to the tool</a>
+<h3>Paste source code here:</h3>
+<textarea id="textareaID" rows="7" cols="100"></textarea>
+<br><br>
+<label for="numcol">Number of pets per row</label>
+	<select id="numcol">
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10" selected="selected">10</option>
+	 </select><br><br>
+	
+<input type="button" value="Generate code" onclick="displayValue2()"><br>
+<h3>Copy HTML into petpage:</h3>
+<textarea id="textareaID2" rows="7" cols="100"></textarea>
+<br><br>
+<button id="HTMLButton" onclick="copyHTML()">Copy HTML to clipboard</button>
+<br><br>
+<h3>Copy CSS into petpage:</h3>
+<textarea id="textareaID3" rows="7" cols="100">
+</textarea>
+<br><br>
+<button id="CSSButton" onclick="copyCSS()">Copy CSS to clipboard</button>
+<br><br>
+<script src="DVPatpage2.js"></script>
+</body>
+</html>
