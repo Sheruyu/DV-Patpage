@@ -133,6 +133,10 @@ function displayValue2() {
 		{
 			PenBG = "b9";
 		}
+		else if (PenNameTestArray[i][0].indexOf("frog-pond") >= 0) 
+		{ 
+			PenBG = "b10"; 
+		}
 		else
 		{
 			PenBG = "";
