@@ -271,7 +271,7 @@ font-size: 18px;
 font-weight: bold;
 background-size: cover;}
 
-.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10 {
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9 {
 margin-left: 14px;
 margin-top: -3px;
 margin-bottom: 20px;
