@@ -253,7 +253,7 @@ font-family: "Roboto Condensed", "Helvetica", "Arial", sans-serif;
 color: #fff;
 font-size: 15px;}
 
-.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9 {
+.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10 {
 margin-left: 14px;
 position: absolute;
 width:325px;
@@ -291,6 +291,7 @@ font-size: 24px;}
 .b7 {background: url("/img/items_environment/0/255-obsidian-night.png");}
 .b8 {background: url("/img/items_environment/0/254-golden-aquarium.png");}
 .b9 {background: url("/img/items_environment/2/2861-witchs-tower.png");}
+.b10 {background-image: url(/img/items_environment/3/3846-frog-pond.png);}
 
 .p1 {background-color: 94b641;}
 .p2 {background-color: 438bb1;}
@@ -301,6 +302,7 @@ font-size: 24px;}
 .p7 {background-color: 335784;}
 .p8 {background-color: 4b9da2;}
 .p9 {background-color: 46425d;}
+.p10 {background-color: 87ad89;}
 
 .footer-body {
 background: #e8b492;
