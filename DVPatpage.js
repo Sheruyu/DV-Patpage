@@ -278,7 +278,7 @@ function splitPage() {
     if (checkBox.checked) {
         text.style.display = "block";
 
-        text.innerHTML = "Check pens to be included. Paste source code above first. Uncheck and recheck the above checkbox to refresh the following checkboxes.<br>";
+        text.innerHTML = "Check the pens to be included.<br>";
 			text.innerHTML += `
 			 <label for="numPens">Number of pens per page: </label>
 			 <select name="numPens" id="numPens">
@@ -289,6 +289,9 @@ function splitPage() {
 				).join('')}
 			</select><br>
 	`;
+	if (allMatches.length === 0) {
+		text.innerHTML = "No pens detected. Please paste source code first";
+	}
 		
 
         matches.forEach(function(item) {
@@ -332,4 +335,9 @@ function addPen(checkbox) {
 
     //alert(matches);
 }
+
+document.getElementById("textareaID").addEventListener("input", function() {
+    document.getElementById("myCheck").checked = false;
+    splitPage();
+});
 
