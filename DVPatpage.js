@@ -229,7 +229,7 @@ function displayValue() {
 	}
 	
 	//reset button text
-	document.getElementById("HTMLButton").innerHTML = "Copy HTML to clipboard";
+	document.getElementById("buttonID1").innerHTML = "Copy HTML to clipboard";
 	document.getElementById("CSSButton").innerHTML = "Copy CSS to clipboard";
 }
 
